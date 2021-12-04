@@ -19,43 +19,32 @@ def iswinner(grid, draw):
             return True
     return False
 
-def init(filename):
+def part12(filename):
     file = open(filename, "r")
     draw = str2list(file.readline(),",")
     rows = map(lambda l: str2list(l," "), file.readlines())
     grids = functools.reduce(lambda a,l: a + [[]] if not l else a[0:-1]+[a[-1]+[l]], rows,[])
-    return (draw, grids)
 
-def part1(filename):
-    (draw, grids) = init(filename)
-
-    winners = []
-    sub_draw = []
+    first = None
+    last = None
     for i in range(1,len(draw)+1):
         sub_draw = draw[0:i]
         winners = [grid for grid in grids if iswinner(grid, sub_draw)]
         if winners:
-            break
-
-    return scoreWinner(winners[0], sub_draw) if winners else 0
-
-def part2(filename):
-    (draw, grids) = init(filename)
-
-    score = 0
-    for i in range(1,len(draw)+1):
-        sub_draw = draw[0:i]
-        winners = [grid for grid in grids if iswinner(grid, sub_draw)]
-        if winners:
+            if not first:
+                first = scoreWinner(winners[0], sub_draw)
             for winner in winners:
                 grids.remove(winner)
             if not grids:
-                return scoreWinner(winners[0], sub_draw)
-
-    return score
+                last = scoreWinner(winners[0], sub_draw)
+                break
+    
+    file.close()
+    return (first, last)
 
 
 if __name__ == '__main__':
-    print("part1=", part1("day4_input.txt"))
-    print("part2=", part2("day4_input.txt"))
+    (first,last) = part12("day4_input.txt")
+    print("part1=", first)
+    print("part2=", last)
 
