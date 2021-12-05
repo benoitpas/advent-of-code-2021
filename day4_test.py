@@ -1,10 +1,9 @@
-from day3 import part1
-import day4
 import unittest
+import day4
 
 class TestDay4(unittest.TestCase):
     def setUp(self):
-        r =  day4.part12("day4_input_test.txt")
+        r = day4.part12("day4_input_test.txt")
         self.part1 = r[0]
         self.part2 = r[1]
 
