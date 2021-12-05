@@ -20,3 +20,6 @@ Python again but trying to be more idiomatic than in day 3 and using generators.
 They are quite a pain to debug as they are lazy but with no caching, i.e. can only be evaluated once. Feel a bit like a half baked lazy list implementation. I can certainly understand it is more efficient to execute but to quickly develop a working solution, it is probably better to stick to lists. And then optimize with generators if necessary.
 
 I'm getting a better grasp of the VS code debug mode for Python which is actually great.
+
+# Day 5
+side effects galore ! tripped by .sort()
