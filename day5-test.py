@@ -6,5 +6,8 @@ class TestDay4(unittest.TestCase):
     def test_part1(self):
         self.assertEqual(5, day5.part1("day5_input_test.txt"))
 
+    def test_part2(self):
+        self.assertEqual(12, day5.part2("day5_input_test.txt"))
+
 if __name__ == '__main__':
     unittest.main()
