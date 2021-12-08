@@ -23,3 +23,12 @@ I'm getting a better grasp of the VS code debug mode for Python which is actuall
 
 # Day 5
 side effects galore ! tripped by .sort()
+
+# Day 6
+nice one
+
+# Day 7
+All with the spreadsheet
+
+# Day 8
+part1 with spreadsheet, part 2 with python (brute force, not really smart)
