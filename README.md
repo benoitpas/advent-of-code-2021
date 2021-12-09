@@ -32,3 +32,6 @@ All with the spreadsheet
 
 # Day 8
 part1 with spreadsheet, part 2 with python (brute force, not really smart)
+
+# Day 9
+Part 1 could have been done with a spreadsheet but as I had doubt for part 2 I did all in Python.
