@@ -35,3 +35,10 @@ part1 with spreadsheet, part 2 with python (brute force, not really smart)
 
 # Day 9
 Part 1 could have been done with a spreadsheet but as I had doubt for part 2 I did all in Python.
+
+# Day 10
+I'm getting the hang of python, there are still a few things that annoy me like:
+* mutable operations on collections, like [reverse](https://github.com/benoitpas/advent-of-code-2021/blob/939d2329301b6a4736aebb6bad5955aa459dc4f5/day10.py#L24) or [sort](https://github.com/benoitpas/advent-of-code-2021/blob/939d2329301b6a4736aebb6bad5955aa459dc4f5/day10.py#L39) on a list.
+* also because it is an interpreted language, I only find out if I forgot the '()' at the end of ``reverse()`` or ``sort()`` when I run the program. That wouldn't happen with a statically typed language.
+
+Anyway, I think I still prefer immutable collections, operations are more succinct and less error prone.
