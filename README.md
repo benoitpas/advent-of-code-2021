@@ -42,3 +42,10 @@ I'm getting the hang of python, there are still a few things that annoy me like:
 * also because it is an interpreted language, I only find out if I forgot the '()' at the end of ``reverse()`` or ``sort()`` when I run the program. That wouldn't happen with a statically typed language.
 
 Anyway, I think I still prefer immutable collections, operations are more succinct and less error prone.
+
+# Day 11
+This time, as from the very detailed descriptions and the number of examples give it is very clear that the behavior is difficult to get right I decided to write some more granular unit tests compared to the other days.
+
+I have been tripped by another interesting characterics of python mutable collections.
+
+Also got tripped again at runtime after forgeting ``()`` after ``copy`` !
