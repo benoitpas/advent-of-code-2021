@@ -45,13 +45,24 @@ def next(state):
     nb_flashes = sum((1 if flash[y][x] else 0 for x in range(n) for y in range(n)))
     return nb_flashes
 
-def part1(filename):
+def part12(filename):
     state = parse_input(filename)
-    r = 0
-    for i in range(100):
-        r = r + next(state)
-    return r
+    all = len(state) * len(state)
+    part1 = 0
+    part2 = 100
+    nb_flash = 0
+    for i in range(part2):
+        nb_flash = next(state)
+        part1 = part1 + nb_flash
+    
+    while nb_flash < all:
+        part2 = part2 + 1
+        nb_flash = next(state)
+
+    return (part1,part2)
 
 if __name__ == '__main__':
-    print("part1=", part1("day11_input.txt"))
+    (part1, part2) = part12("day11_input.txt")
+    print("part1=", part1)
+    print("part2=", part2)
 

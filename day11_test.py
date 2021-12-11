@@ -6,7 +6,9 @@ class TestDay11(unittest.TestCase):
         self.s1 = day11.to_state(("11111", "19991", "19191", "19991", "11111"))
         self.s2 = day11.to_state(("34543", "40004", "50005", "40004", "34543"))
         self.s3 = day11.to_state(("45654", "51115", "61116", "51115", "45654"))
-        self.part1 = day11.part1("day11_input_test.txt")
+        r = day11.part12("day11_input_test.txt")
+        self.part1 = r[0]
+        self.part2 = r[1]
 
     def test_neighbours_simple(self):
         n = day11.neighbours(2,3,10)
@@ -31,6 +33,9 @@ class TestDay11(unittest.TestCase):
 
     def test_part1(self):
         self.assertEqual(1656, self.part1)
+
+    def test_part2(self):
+        self.assertEqual(195, self.part2)
 
 if __name__ == '__main__':
     unittest.main()
