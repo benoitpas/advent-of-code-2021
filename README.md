@@ -49,3 +49,10 @@ This time, as from the very detailed descriptions and the number of examples giv
 I have been tripped by another interesting characterics of python mutable collections.
 
 Also got tripped again at runtime after forgeting ``()`` after ``copy`` !
+
+# Day 12
+Another nice recursive algorithm ! It is always very satisfying to solve what looks like a complex problem with a short implementation.
+
+A good way to properly understand when collections can be safely mutated. Actually, I'm embracing more and more immutability in python. For example in how I populate the dictionary with the paths. Clearly the pendulum is coming back ! 
+
+I don't think that's going to last, it is probably ok in a small example but it does feel like playing with fire in a larger program where that can introduce insidious bugs.
