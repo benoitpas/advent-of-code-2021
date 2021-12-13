@@ -46,7 +46,7 @@ Anyway, I think I still prefer immutable collections, operations are more succin
 # Day 11
 This time, as from the very detailed descriptions and the number of examples give it is very clear that the behavior is difficult to get right I decided to write some more granular unit tests compared to the other days.
 
-I have been tripped by another interesting characterics of python mutable collections.
+I have been tripped by another interesting characterics of python mutable collections (I could expand on ``[[False] * 3] * 3]``)
 
 Also got tripped again at runtime after forgeting ``()`` after ``copy`` !
 
@@ -56,3 +56,8 @@ Another nice recursive algorithm ! It is always very satisfying to solve what lo
 A good way to properly understand when collections can be safely mutated. Actually, I'm embracing more and more immutability in python. For example in how I populate the dictionary with the paths. Clearly the pendulum is coming back ! 
 
 I don't think that's going to last, it is probably ok in a small example but it does feel like playing with fire in a larger program where that can introduce insidious bugs.
+
+# Day 13
+Not too much to add, quite straightforward to implement. I'm really getting up to speed with Python now, I managed to avoid the usual pitfalls.
+
+Nice to get a visual result !
