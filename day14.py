@@ -1,7 +1,6 @@
 
 from typing import _ProtocolMeta
 
-
 def parse_input(filename):
     with open(filename) as file:
         lines = file.read().splitlines()
@@ -13,22 +12,12 @@ def parse_input(filename):
     
     return (polymer, m)
 
-
-
-
-
-
-
-
 def toFreq(s):
     fm = {}
     for e in s:
         fm[e] = 1 + fm[e] if e in fm else 1
     p = sorted(fm.items(), key = lambda p : p[1])
     return p
-
-
-
 
 def part12(polymer, mapping):
 

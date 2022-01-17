@@ -63,7 +63,7 @@ Not too much to add, quite straightforward to implement. I'm really getting up t
 Nice to get a visual result !
 
 # Day 14
-I did part 1 with the naive approach of modifying the string although it was kind of obivous part 2 would be about scalabilty of the solution.
+I did part 1 with the naive approach of modifying the string although it was kind of obvious that part 2 would be about scalabilty of the solution.
 
 One nice thing with python is that ints are of unlimited size. I only realizes when I was working on this puzzle and ints were getting bigger and bigger. 
 
